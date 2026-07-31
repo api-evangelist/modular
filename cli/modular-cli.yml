@@ -1,0 +1,50 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/cli/
+name: max
+summary: >-
+  Modular ships the `max` command-line tool as the primary interface for running,
+  serving, and benchmarking MAX pipelines, distributed alongside the `modular` and
+  `mojo` tools. Installed via pip (`pip install modular` / `pip install max`) or the
+  conda/Pixi package manager from Modular's channel.
+install:
+  - method: pip
+    command: pip install modular
+  - method: pixi
+    command: pixi add modular
+  - method: conda
+    command: conda install -c https://conda.modular.com/max modular
+  - method: docker
+    command: docker pull modular/max-nvidia-full
+tools:
+  - name: max
+    description: Runs and benchmarks MAX pipelines; parent command for serving and generation.
+    docs: https://docs.modular.com/max/cli/
+  - name: mojo
+    description: Mojo language compiler and runner (docs at mojolang.org).
+    docs: https://mojolang.org/docs
+  - name: modular
+    description: Installs and manages Modular tools and environments.
+    docs: https://docs.modular.com/max/packages/
+commands:
+  - command: max serve
+    description: Launches a model server with an OpenAI-compatible endpoint.
+    docs: https://docs.modular.com/max/cli/serve
+  - command: max generate
+    description: Generates output from a given model and prompt without using an endpoint.
+    docs: https://docs.modular.com/max/cli/generate
+  - command: max encode
+    description: Converts input text into embeddings for semantic search and text similarity.
+    docs: https://docs.modular.com/max/cli/encode
+  - command: max benchmark
+    description: Runs comprehensive benchmark tests on an active model server.
+    docs: https://docs.modular.com/max/cli/benchmark
+  - command: max list
+    description: Lists every pipeline architecture registered with MAX with example configs.
+    docs: https://docs.modular.com/max/cli/list
+  - command: max warm-cache
+    description: Preloads and compiles the model to optimize initialization time.
+    docs: https://docs.modular.com/max/cli/warm-cache
+  - command: max warm-interpreter-cache
+    description: Warms the MAX interpreter cache for graph operations.
+    docs: https://docs.modular.com/max/cli/warm-interpreter-cache

@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/changelog/
+versioning:
+  scheme: calendar
+  current: v26.4
+  current_date: '2026-06-18'
+  nightly: v26.5
+  channels:
+    - stable
+    - nightly
+  docs: https://docs.modular.com/max/packages/
+  notes: >-
+    Calendar versioning (YY.MINOR). Stable and rolling nightly channels are published
+    for both the `modular` and `max` distributions.
+status_page: https://status.modular.com
+changelog: https://docs.modular.com/max/changelog/
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No formal RFC 8594 Sunset/Deprecation header policy located in the public docs as of this pass.
+sla:
+  url: null
+  uptime_target: null
+deprecated_operations: []

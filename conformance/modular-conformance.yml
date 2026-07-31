@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/rest-api/
+standards:
+  - id: openai-api-compatible
+    conforms: true
+    evidence: >-
+      MAX serve exposes OpenAI-compatible REST endpoints (/v1/chat/completions,
+      /v1/completions, /v1/embeddings, /v1/responses) usable with the OpenAI client
+      libraries; documented across the inference guides and the max serve reference.
+  - id: oauth2
+    conforms: false
+    evidence: Hosted API uses Bearer API-token authentication, not OAuth2 flows.
+  - id: soc2-type2
+    conforms: true
+    evidence: >-
+      Modular states SOC 2 Type 2 certification across all editions on the pricing page.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: >-
+      Error responses follow the OpenAI JSON error envelope ({"error": {...}}), not
+      application/problem+json.

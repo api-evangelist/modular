@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/rest-api/
+api_style: rest-openai-compatible
+base_url:
+  hosted: https://api.modular.com/v1
+  self_hosted: http://0.0.0.0:8000/v1
+authentication:
+  style: bearer-token
+  header: Authorization
+  detail: authentication/modular-authentication.yml
+endpoints:
+  - path: /v1/chat/completions
+    method: POST
+    description: OpenAI-compatible chat completions (text and multimodal image/video-to-text).
+  - path: /v1/completions
+    method: POST
+    description: OpenAI-compatible legacy text completions.
+  - path: /v1/embeddings
+    method: POST
+    description: Create embeddings for input text.
+  - path: /v1/responses
+    method: POST
+    description: Responses endpoint used for image and video generation.
+  - path: /v1/models
+    method: GET
+    description: List available models (OpenAI-compatible).
+error_envelope:
+  shape: openai
+  example: '{"error": {"message": "...", "type": "...", "code": "..."}}'
+  note: Follows the OpenAI error object shape, not RFC 9457 problem+json.
+idempotency:
+  supported: false
+  note: No documented idempotency-key header; inference endpoints follow OpenAI semantics.
+pagination:
+  supported: false
+  note: Inference endpoints are single-request; no list pagination surface documented.
+streaming:
+  supported: true
+  note: Server-sent event streaming via the OpenAI-compatible stream=true parameter.
+versioning:
+  detail: lifecycle/modular-lifecycle.yml

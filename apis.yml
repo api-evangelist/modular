@@ -1,9 +1,28 @@
 aid: modular
 name: Modular
-description: Modular is a company surfaced as a portfolio company of general-catalyst, greylock, gv, sv-angel
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Modular is an AI infrastructure company building a unified inference stack that runs
+  GenAI models from custom GPU kernels up to production cloud serving. Its open-source
+  MAX framework (Modular Accelerated Xecution) and the Mojo systems programming language
+  let teams serve frontier open models on NVIDIA, AMD, and Apple Silicon hardware. Modular
+  exposes an OpenAI-compatible inference REST API (chat completions, completions, embeddings,
+  and image/video responses) available as self-hosted containers, shared per-token endpoints,
+  dedicated per-minute endpoints, and bring-your-own-cloud deployments through the Modular
+  Console.
 url: https://raw.githubusercontent.com/api-evangelist/modular/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://docs.modular.com/images/modular-metadata.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,19 +30,99 @@ x-backed-by:
 - greylock
 - gv
 - sv-angel
-x-tier: stub
+x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- Inference
+- LLM
+- GPU
+- Developer Tools
+- Infrastructure
+apis:
+- name: MAX Inference REST API
+  description: >-
+    OpenAI-compatible inference API served by MAX. Exposes /v1/chat/completions,
+    /v1/completions, /v1/embeddings, /v1/responses (image and video generation), and
+    /v1/models. Hosted at api.modular.com with Bearer API-token auth, or self-hosted via
+    `max serve`.
+  humanURL: https://docs.modular.com/max/rest-api/
+  baseURL: https://api.modular.com/v1
+  tags:
+  - Inference
+  - LLM
+  - Embeddings
+  - AI
+  properties:
+  - type: Documentation
+    url: https://docs.modular.com/max/rest-api/
+  - type: OpenAICompatible
+    url: https://docs.modular.com/max/inference/text-to-text/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/modular-domain-security.yml
 - type: Website
   url: https://www.modular.com/
+- type: DeveloperPortal
+  url: https://console.modular.com/
+- type: Documentation
+  url: https://docs.modular.com/
+- type: APIReference
+  url: https://docs.modular.com/max/rest-api/
+- type: GettingStarted
+  url: https://docs.modular.com/max/get-started/
+- type: Blog
+  url: https://www.modular.com/blog
+- type: GitHubOrganization
+  url: https://github.com/modular
+- type: Support
+  url: https://www.modular.com/community
+- type: Pricing
+  url: https://www.modular.com/pricing
+- type: SignUp
+  url: https://console.modular.com/signup
+- type: TermsOfService
+  url: https://www.modular.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.modular.com/legal/privacy
+- type: StatusPage
+  url: https://status.modular.com
+- type: Compliance
+  url: https://www.modular.com/pricing
+- type: LLMsTxt
+  url: llms/modular-llms.txt
+- type: Packages
+  url: packages/modular-packages.yml
+- type: SDKs
+  url: packages/modular-packages.yml
+- type: CLI
+  url: cli/modular-cli.yml
+- type: ChangeLog
+  url: changelog/modular-changelog.yml
+- type: Lifecycle
+  url: lifecycle/modular-lifecycle.yml
+- type: WellKnown
+  url: well-known/modular-well-known.yml
+- type: Conformance
+  url: conformance/modular-conformance.yml
+- type: Conventions
+  url: conventions/modular-conventions.yml
+- type: Authentication
+  url: authentication/modular-authentication.yml
+- type: TrustCenter
+  url: security/modular-trust-center.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

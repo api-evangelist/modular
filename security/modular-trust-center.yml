@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.modular.com/pricing
+url: https://www.modular.com/pricing
+certifications:
+  - SOC 2 Type 2
+evidence:
+  - source: https://www.modular.com/pricing
+    keywords: [soc 2 type 2]
+    note: >-
+      "All editions include SOC 2 Type 2 certification for security compliance"
+      stated on the Modular pricing page. No dedicated trust.modular.com portal
+      was located during this pass.
+report_issue: https://www.modular.com/company/report-issue

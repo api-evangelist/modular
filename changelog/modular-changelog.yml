@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/changelog/
+scheme: calendar
+scheme_note: >-
+  Modular Platform uses calendar-style versioning (YY.MINOR, e.g. 26.4 = 2026 fourth
+  release). Both `modular` and `max` PyPI packages track the same version. A rolling
+  nightly channel (currently v26.5) precedes each stable release.
+current: v26.4
+current_date: '2026-06-18'
+nightly: v26.5
+entries:
+  - version: v26.5
+    date: null
+    channel: nightly
+    status: in-progress
+    highlights:
+      - New model architectures (GLM-5.2, Laguna, DiffusionGemma, Nemotron-H) and MTP speculative decoding.
+      - Tool-calling, reasoning, and structured-output (response_format) support extended to more models.
+  - version: v26.4
+    date: '2026-06-18'
+    channel: stable
+    highlights:
+      - Latest stable release of the Modular Platform (MAX + Mojo).
+  - version: v26.3
+    date: '2026-05-07'
+    channel: stable
+  - version: v26.2
+    date: '2026-03-19'
+    channel: stable
+  - version: v26.1
+    date: '2026-01-29'
+    channel: stable
+  - version: v25.7
+    date: '2025-11-20'
+    channel: stable
+  - version: v25.6.1
+    date: '2025-10-10'
+    channel: stable
+  - version: v25.6
+    date: '2025-09-22'
+    channel: stable
+  - version: v25.5
+    date: '2025-08-05'
+    channel: stable
+  - version: v25.4
+    date: '2025-06-18'
+    channel: stable

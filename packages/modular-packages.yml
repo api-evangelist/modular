@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/packages/
+packages:
+  - language: python
+    registry: pypi
+    name: modular
+    url: https://pypi.org/project/modular/
+    install: pip install modular
+    version: 26.4.0
+    official: true
+    description: A suite of AI libraries and tools that accelerates model serving and provides programmability all the way to the GPU kernel (MAX + Mojo).
+  - language: python
+    registry: pypi
+    name: max
+    url: https://pypi.org/project/max/
+    install: pip install max
+    version: 26.4.0
+    official: true
+    description: The Modular Accelerated Xecution (MAX) framework, published by Modular Inc.
+  - language: python
+    registry: conda
+    name: modular
+    url: https://docs.modular.com/max/packages/
+    install: pixi add modular
+    channel: https://conda.modular.com/max
+    official: true
+    description: Modular tools distributed via the conda / Pixi package manager (stable and nightly channels).
+  - language: container
+    registry: docker-hub
+    name: modular/max-nvidia-full
+    url: https://hub.docker.com/u/modular
+    install: docker pull modular/max-nvidia-full
+    official: true
+    description: MAX inference server container images (NVIDIA and AMD variants) under the modular/ Docker Hub namespace.

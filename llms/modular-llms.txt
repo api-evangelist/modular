@@ -1,0 +1,46 @@
+# Modular MAX documentation
+
+> Official documentation for MAX — accelerated AI serving. Mojo language docs are at mojolang.org.
+
+For section-specific indexes, see:
+- [MAX guides (index)](/llms-max-guides.txt)
+- [MAX Python API (index)](/llms-python.txt)
+- [MAX AI kernels API (index)](/llms-kernels.txt)
+- [MAX C API (index)](/llms-c-api.txt)
+- [Glossary (full content)](/llms-glossary.txt)
+
+Mojo language documentation is hosted separately at [mojolang.org](https://mojolang.org/llms.txt).
+
+
+## Table of Contents
+
+- [What is Modular](https://docs.modular.com/max/intro.md): An overview of the Modular platform, what it does, and how to use it.
+- [Quickstart](https://docs.modular.com/max/get-started.md): A quickstart guide to run a GenAI model locally with Modular.
+- [Packages](https://docs.modular.com/max/packages.md): Learn how to install Modular tools, set up your environment, and choose between nightly and stable versions
+- [MAX container](https://docs.modular.com/max/container.md): Learn more about the provided Docker container for MAX deployment
+- [Embeddings](https://docs.modular.com/max/inference/embeddings.md): Learn how to use the MAX embeddings endpoint to create embeddings for input text
+- [Image generation](https://docs.modular.com/max/inference/image-generation.md): Generate images from text prompts or transform existing images using the MAX v1/responses endpoint
+- [Image and video to text](https://docs.modular.com/max/inference/image-to-text.md): Use the MAX chat completions endpoint with image or video input to generate descriptions and answer questions about visual content
+- [Text to text](https://docs.modular.com/max/inference/text-to-text.md): Generate text using MAX with OpenAI-compatible chat and completion endpoints
+- [Video generation](https://docs.modular.com/max/inference/video-generation.md): Generate videos from text prompts or animate existing images using the MAX v1/responses endpoint
+- [Deploy MAX on GPU with self-hosted endpoints](https://docs.modular.com/max/deploy/local-to-cloud.md): Learn how to deploy MAX pipelines to cloud
+- [Model development overview](https://docs.modular.com/max/develop.md): Learn the process to bring a trained model from Hugging Face to MAX.
+- [max benchmark](https://docs.modular.com/max/cli/benchmark.md): Runs comprehensive benchmark tests on an active model server to measure
+- [max encode](https://docs.modular.com/max/cli/encode.md): Converts input text into embeddings for semantic search, text similarity, and
+- [max generate](https://docs.modular.com/max/cli/generate.md): Generates output from a given model and prompt without using an endpoint.
+- [max](https://docs.modular.com/max/cli.md): The `max` command line tool runs and benchmarks MAX pipelines from one
+- [max list](https://docs.modular.com/max/cli/list.md): Lists every pipeline architecture registered with MAX, along with example
+- [max serve](https://docs.modular.com/max/cli/serve.md): Launches a model server with an OpenAI-compatible endpoint. Specify the
+- [max warm-cache](https://docs.modular.com/max/cli/warm-cache.md): Preloads and compiles the model to optimize initialization time by:
+- [max warm-interpreter-cache](https://docs.modular.com/max/cli/warm-interpreter-cache.md): MAX includes an interpreter that runs operations one at a time as your graph
+- [max](https://docs.modular.com/max/api/python.md): The MAX Python API reference.
+- [kernels](https://docs.modular.com/max/api/kernels.md): High-performance compute kernels, operators, and tensor APIs for MAX graphs.
+- [What's new](https://docs.modular.com/max/changelog.md): Release notes for each version of the Modular Platform.
+- [Pixi basics](https://docs.modular.com/pixi.md): Pixi is a CLI tool [from Prefix.dev](https://prefix.dev/blog/launching_pixi)
+- [Glossary](https://docs.modular.com/glossary.md): Explanations for some terms and concepts you'll encounter in the Modular docs.
+- [Using AI coding assistants](https://docs.modular.com/max/coding-assistants.md): Use AI coding assistants such as Cursor, Claude Code, Copilot, and Windsurf with Modular.
+- [Environment variables](https://docs.modular.com/max/environment-variables.md): Reference for all configurable environment variables in MAX
+- [FAQ](https://docs.modular.com/max/faq.md): Answers to various questions about the Modular platform.
+- [GPU profiling with Nsight Systems](https://docs.modular.com/max/gpu-system-profiling.md): How to profile MAX models and endpoints with Nsight Systems.
+- [Supported models](https://docs.modular.com/max/models.md): See all the model architectures supported by MAX.
+- [REST API](https://docs.modular.com/max/rest-api.md): The API reference for the MAX inference endpoint.

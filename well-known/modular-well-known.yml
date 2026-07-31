@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: probe of /.well-known/ paths on Modular hosts
+note: >-
+  No /.well-known/ discovery documents were served. security.txt returned 404 on both
+  www and docs hosts; console.modular.com/.well-known/openid-configuration returned the
+  SPA HTML shell (not a real OIDC discovery document); /.well-known/api-catalog returned
+  a 302 to the SPA. Recorded as negative results — absence is valid data.
+hosts:
+  - host: https://www.modular.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://docs.modular.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 302
+        note: redirects to SPA, no machine-readable catalog
+  - host: https://console.modular.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        note: returns SPA HTML shell, not a valid OIDC discovery document

@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.modular.com/max/rest-api/
+docs: https://docs.modular.com/max/inference/text-to-text/
+summary:
+  types: [http]
+  http_scheme: bearer
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+  - name: bearerToken
+    type: http
+    scheme: bearer
+    location: header
+    header: Authorization
+    format: Bearer <API token>
+    context: hosted
+    notes: >-
+      The hosted Modular inference API (base https://api.modular.com/v1) requires a
+      Bearer API token issued from the Modular Console; api.modular.com/v1/models
+      returns HTTP 401 without one. API tokens are provisioned and billed per Organization.
+  - name: localNoAuth
+    type: http
+    scheme: bearer
+    location: header
+    context: self-hosted
+    notes: >-
+      Self-hosted `max serve` accepts the OpenAI api_key parameter for client
+      compatibility but does not validate it (docs use api_key='EMPTY').
