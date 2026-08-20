@@ -38,6 +38,15 @@ modified: '2026-07-20'
 tags:
 - Company
 - Artificial Intelligence
+- Machine-Learning
+- Inference
+- LLM
+- GPU
+- Developer Tools
+- Infrastructure
+tags_raw:
+- Company
+- Artificial Intelligence
 - Machine Learning
 - Inference
 - LLM
@@ -54,6 +63,11 @@ apis:
   humanURL: https://docs.modular.com/max/rest-api/
   baseURL: https://api.modular.com/v1
   tags:
+  - Inference
+  - LLM
+  - Embeddings
+  - Artificial Intelligence
+  tags_raw:
   - Inference
   - LLM
   - Embeddings
