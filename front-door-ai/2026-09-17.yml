@@ -1,0 +1,36 @@
+# Front Door AI Index — modular — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: modular
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.modular.com
+  final_host: www.modular.com
+  ownership: own
+  owner: modular
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 83
+  host_score: 83
+  density: 27.08
+  words: 3065
+  tiers:
+    agentic: 30
+    core: 48
+    model: 5
+  ambiguous: 8
+  top_terms:
+    AI: 36
+    inference: 23
+    agent: 7
+    LLMs: 5
+    OpenAI: 4
+    AI agent: 3
+    ML: 3
+    agentic: 2
+    gen ai: 2
+    Llama: 1
+    copilot: 1
+    deep learning: 1
