@@ -1,0 +1,68 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.modular.com/pricing
+sources:
+- https://www.modular.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: per-call
+delivery:
+  delivery: open-core
+  method: page
+  read: '2026-10-07'
+  evidence: The Self-Hosted Community Edition is completely free and open source.
+  free_edition: Community Edition
+  managed_tier: Modular Cloud
+  open_source_license: Modular Community License
+published: true
+note: Page lists per-token hosted model API prices ($/1M input, output, cache hit) for ~20 models and
+  $/1K @1MP image model prices, plus four editions (Modular Cloud per token or GPU hour, BYOC per minute,
+  Enterprise custom, free self-hosted Community Edition). Edition tier prices themselves are not numeric;
+  volume/custom pricing via 'Talk to Sales'.
+plan_count: 7
+currency: USD
+plans:
+- name: Modular Cloud
+  price_text: PER TOKEN OR GPU HOUR
+  currency: USD
+  period: per-use
+  unit: token or GPU hour
+  included_quota: Shared & Dedicated Endpoints; start by testing shared endpoints for free
+- name: Bring Your Own Cloud
+  price_text: PAY PER MINUTE
+  period: per-use
+  unit: minute of reserved GPU capacity
+  included_quota: Everything in Dedicated Endpoint, plus deployment in your cloud or on-premise
+- name: Enterprise
+  price_text: CUSTOM ENGAGEMENT
+  period: none
+  included_quota: SOTA inference on any GPU vendor, custom kernels, community support
+- name: Self-Hosted
+  price_text: Free
+  period: none
+  included_quota: Community Edition, free forever with no usage fees
+- name: DeepSeek V4 (hosted endpoint)
+  price_text: '1.74'
+  price: 1.74
+  currency: USD
+  period: per-use
+  unit: $/1M input tokens
+  included_quota: Output 3.48 per 1M; Cache Hit 0.145 per 1M
+- name: GPT OSS 120B (hosted endpoint)
+  price_text: '0.1'
+  price: 0.1
+  currency: USD
+  period: per-use
+  unit: $/1M input tokens
+  included_quota: Output 0.5 per 1M; Cache Hit N/A
+- name: FLUX.2-klein-4B (image)
+  price_text: '1'
+  price: 1
+  currency: USD
+  period: per-use
+  unit: $/1K @ 1MP input
+  included_quota: Output 1 per 1K @ 1MP
