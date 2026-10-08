@@ -66,3 +66,68 @@ plans:
   period: per-use
   unit: $/1K @ 1MP input
   included_quota: Output 1 per 1K @ 1MP
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - metered
+  - subscription
+  units:
+  - compute
+  - token
+  plans:
+  - name: Modular Cloud
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - token
+    periods:
+    - other
+  - name: Bring Your Own Cloud
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Self-Hosted
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: DeepSeek V4 (hosted endpoint)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - token
+    periods:
+    - other
+  - name: GPT OSS 120B (hosted endpoint)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - token
+    periods:
+    - other
+  - name: FLUX.2-klein-4B (image)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - other
