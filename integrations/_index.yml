@@ -101,3 +101,58 @@
     detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
+- slug: modular-pypi-organization-accounts
+  label: PyPI organization accounts
+  partner: pypi
+  partner_name: PyPI organization accounts
+  category: PyPI organization
+  type: register
+  channel: package-registry
+  evidence: https://pypi.org/org/Modular/
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI organization accounts
+    spec_file: null
+    role: pypi-organization
+    registered_name: Modular
+    register_id: https://pypi.org/org/Modular/
+    org_display_name: Modular Inc
+    matched_by: verified-package
+    packages_verified:
+    - max
+    - modular
+    org_projects: 12
+    identity_note: the org is reached through packages sweep-official-sdks / official-clis verified as the provider's
+      own (domain / org leg AND publisher leg); never by the org name
+    signal_note: 'participation only (python): an organization account on PyPI, not a package count'
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
+- slug: modular-docker-hub-docker-verified-publisher
+  label: Docker Hub (docker-verified-publisher)
+  partner: docker-hub
+  partner_name: Docker Hub (docker-verified-publisher)
+  category: Docker Verified Publisher
+  type: marketplace
+  marketplace: docker-verified-publisher
+  channel: partner-built
+  evidence: https://hub.docker.com/u/modular
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: modular-eclipse-foundation-open-vsx
+  label: Eclipse Foundation (open-vsx)
+  partner: eclipse
+  partner_name: Eclipse Foundation (open-vsx)
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: open-vsx
+  channel: partner-built
+  evidence: https://open-vsx.org/namespace/modular-mojotools
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
