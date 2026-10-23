@@ -19,6 +19,7 @@ checked:
 - https://pypi.org/pypi/{package}/json
 - docker-hub/integrations/docker-hub-integration-edges.yml
 - eclipse/integrations/eclipse-integration-edges.yml
+- hugging-face/integrations/hugging-face-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: Visual Studio Code Marketplace
@@ -218,5 +219,31 @@ edges:
   category: IDE / developer extension marketplace listing
   badges:
   - Verified namespace
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/modularai
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - modularai/SmolLM-135M-Instruct-FP32
+  - modularai/Llama-3.1-8B-Instruct-GGUF
+  - modularai/replit-code-1.5
+  - modularai/Llama-3.1-405B-Instruct-autofp8
+  - modularai/llama-3
+  - modularai/llama-2
+  - modularai/DeepSeek-V3-0324-FP4
+  - modularai/llama-3.1-1L
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub models
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 source:
 - https://marketplace.visualstudio.com/vscode
